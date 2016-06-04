@@ -16,8 +16,10 @@ def print_header():
 
 
 def get_or_create_output_folder():
+    base_folder = os.path.dirname(__file__)
+    print(__file__)
     folder = 'cat_pictures'
-    full_path = os.path.abspath(os.path.join('.', folder))
+    full_path = os.path.abspath(os.path.join(base_folder, folder))
     print(full_path)
 
 
